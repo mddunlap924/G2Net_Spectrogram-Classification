@@ -8,7 +8,7 @@ The objective of this competition was to determine if a linear sine-sweep signal
 
 The following image shows a chirp waveform that can easily be seen in all three channels of data. In this application there are three different channels of data where each data channel is representative of gravitational wave observatory such as Livingston, Hanford, and Virgo. The signal is present in each of the three but it contains time shifts and different SNR levels.
 
-![](/home/dunlap/Pictures/CQT_Spectrogram.png)
+![](https://github.com/mddunlap924/G2Net_Spectrogram-Classification/blob/main/CQT_Spectrogram.png)
 
 In this repository the time domain signals are converted into spectrograms using a [Constant-Q transform (CQT)](https://en.wikipedia.org/wiki/Constant-Q_transform). A probability from 0-1 for the detection of the chirp waveform is provided for a given data instance. Common and widely used image classification models, obtained from the [timm](https://github.com/rwightman/pytorch-image-models) package, are trained on the CQT images. The [nnAudio](https://github.com/KinWaiCheuk/nnAudio) processing toolbox was used to significantly speed up spectrogram generation for on-the-fly processing. We ensemble this 1D-CNN with other two-dimensional (2D) spectrogram image classification techniques to boost our score. I also provide a 1D-CNN neural network approach for this competition [here](https://github.com/mddunlap924/G2Net_1D-CNN).
 
