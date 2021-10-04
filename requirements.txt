@@ -1,0 +1,27 @@
+# pip install -r requirements.txt
+
+# Base ----------------------------------------
+numpy~=1.21.0
+pandas~=1.2.5
+seaborn~=0.11.1
+matplotlib~=3.4.2
+plotly~=5.1.0
+librosa~=0.8.1
+PyYAML~=5.4.1
+PyCBC~=1.18.1
+torch~=1.9.0+cu111
+torchvision~=0.10.0+cu111
+torchmetrics~=0.4.0
+wandb~=0.10.33
+scikit-learn~=0.24.2
+torchaudio~=0.9.0
+nnAudio~=0.2.4
+scipy~=1.7.0
+tqdm~=4.61.1
+gwpy~=2.0.4
+timm~=0.4.12
+audiomentations~=0.17.0
+albumentations~=1.0.3
+Pillow~=8.2.0
+imageio~=2.9.0
+scikit-image~=0.18.2
