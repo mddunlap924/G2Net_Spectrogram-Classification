@@ -41,7 +41,7 @@ The architecture can easily be changed by assigning different models in the [con
     model_cfg = timm.create_model(cfg['MODEL']['name']).default_cfg
 ```
 
-Through multiple experiments is was found that only a few augmentation techniques provide a considerable boost the cross-validation scores and leader board score. Image augmentation was conducted using [torchvision](https://pytorch.org/vision/stable/index.html) and a few of the most beneficial image augmentation techniques were [Resize](https://pytorch.org/vision/0.8/_modules/torchvision/transforms/transforms.html#Resize) and [RandomErasing](https://pytorch.org/vision/0.8/_modules/torchvision/transforms/transforms.html#RandomErasing) .
+Through multiple experiments it was found that only a few augmentation techniques provide a considerable boost the cross-validation scores and leader board score. Image augmentation was conducted using [torchvision](https://pytorch.org/vision/stable/index.html) and a few of the most beneficial image augmentation techniques were [Resize](https://pytorch.org/vision/0.8/_modules/torchvision/transforms/transforms.html#Resize) and [RandomErasing](https://pytorch.org/vision/0.8/_modules/torchvision/transforms/transforms.html#RandomErasing) .
 
 Users are encouraged to modify the files as they see fit to best work with their applications. 
 
