@@ -1,0 +1,64 @@
+SUB_SCORE_BEST: .nan
+SUB_SCORE_LAST: .nan
+LOSS: 'bce'
+PRECISION: 32
+BATCH_SIZE: 64
+CKPT: best
+DATASET: Raw_4
+N_FOLDS: 5
+FOLDS:
+- 0
+EPOCHS: 10
+LEARNING_SCHEDULER:
+  T_0: 10
+  T_mult: 1
+  lr_initial: 5.0e-03
+  lr_min: 1.0e-06
+  scheduler: cosinewarmrestarts
+MODEL:
+  name: resnet34
+  pretrained: True
+  num_neurons: .nan
+RESIZE: (243, 257)
+MONITOR:
+  metric: val/auroc
+  mode: max
+PARTIAL: True
+TTA: True
+LIMIT_BATCHES:
+  apply: False
+  percent: 0.10
+SPEC:
+  type: CQT
+  fmax: 1000.
+  fmin: 18.
+  hop: 16
+  filter_scale: 0.25
+  bins_per_octave: 40
+  n_bins: 84
+  sr: 2048
+SPEC_MIX:
+  apply: False
+  prob: 0.00
+  fmax: [1000.]
+  fmin: [15.]
+  hop: [32]
+  filter_scale: [1.0]
+  bins_per_octave: [8, 12]
+  n_bins: [84]
+AUG_IMG:
+  RandomErasing:
+    prob: 0.50
+    num: 18
+    scale: [0.005, 0.005]
+    ratio: [0.20, 1.80]
+WHITEN:
+  alpha: 0.25
+  leakage_window_type: 'tukey'
+NORM_SIG:
+  tech: 'norm_mag'
+  factor: 1e-23
+TRAINING_CONTINUE:
+  apply: False
+  run: '1p7ofqsn'
+
