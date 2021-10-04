@@ -2,7 +2,7 @@
 
 
 
-This is code [I](https://www.kaggle.com/dunlap0924) developed for the [Kaggle G2Net Gravitational Wave Competition](https://www.kaggle.com/c/g2net-gravitational-wave-detection/overview). Thanks to teammates [Johnny Lee](https://www.kaggle.com/wuliaokaola), [Alex](https://www.kaggle.com/lihuajing), and [Coolz](https://www.kaggle.com/cooolz) we were able to finish in 10th position out of 1,219 teams (i.e., [top 1%](https://www.kaggle.com/dunlap0924)) through creative problem solving and advanced solutions.
+This is code [I (i.e., Myles Dunlap)](https://www.kaggle.com/dunlap0924) developed for the [Kaggle G2Net Gravitational Wave Competition](https://www.kaggle.com/c/g2net-gravitational-wave-detection/overview). Thanks to teammates [Johnny Lee](https://www.kaggle.com/wuliaokaola), [Alex](https://www.kaggle.com/lihuajing), and [Coolz](https://www.kaggle.com/cooolz) we were able to finish in 10th position out of 1,219 teams (i.e., [top 1%](https://www.kaggle.com/dunlap0924)) through creative problem solving and advanced solutions.
 
 The objective of this competition was to determine if a linear sine-sweep signal, also referred to as a chirp waveform, was either present or not in a data instance. The challenge is that the chirp waveform would have a very low signal-to-noise ratio (SNR) and frequency content could change between data instances. SNR is one, if not the most, informative measures of signal detectability. Fundamentally, this competition was a multi-channel signal detection challenge.
 
