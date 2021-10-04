@@ -30,7 +30,7 @@ In this section a description of the modeling approach and steps required to exe
 
 2. [main.py]() contains the high-level workflow and structure for calling commands such as data loading, k-fold splitting, data preprocessing, training, logging results, and inference. This file provides the overall workflow. 
 
-3. [pl_model.py]() contains methods and classes for tasks such as data normalization, waveform augmentations, data loaders, data modules, model description, and checkpoint locations.
+3. [pl_dataset_model.py]() contains methods and classes for tasks such as data normalization, waveform augmentations, data loaders, data modules, model description, and checkpoint locations.
 
 4. [helper_functions.py]() contains methods and classes for tasks such as logging data with [Weights & Biases][3], signal processing and filtering techniques with [GWpy][4] such as data [spectral whitening][5], loading configuration parameters, and measuring descriptive statistics on the datasets.
 
