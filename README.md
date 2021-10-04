@@ -22,7 +22,7 @@ The data is ~77GB and can be found on [Kaggle](https://www.kaggle.com/c/g2net-gr
 
 In this section a description of the modeling approach and steps required to execute the code are provided. [PyTorch Lightning][1] was used for this project. 
 
-1. The [execute_models_bash]() is used to execute a model and its configuration. Run commands in the terminal to execute. This file can be modified to execute over multiple configuration files. This approach is helpful for experimenting with various hyperparameters, training on multiple data folds,  and allowing you to work on other tasks. At the time of writing PyTorch Lightning had an issue with [releasing RAM][2] and this was a suitable workaround.
+1. The [execute_models_bash]() is used to execute a model and its configuration. Run commands in the terminal to execute. This file can be modified to execute over multiple configuration files. This approach is helpful for experimenting with various hyperparameters, training on multiple data folds,  and allowing you to work on other tasks. At the time of writing PyTorch Lightning had an issue with [releasing RAM](https://github.com/PyTorchLightning/pytorch-lightning/issues/2010) and this was a suitable workaround.
 
    ```
    sh execute_models_bash
