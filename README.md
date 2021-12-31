@@ -22,7 +22,7 @@ The data is ~77GB and can be found on [Kaggle](https://www.kaggle.com/c/g2net-gr
 
 In this section a description of the modeling approach and steps required to execute the code are provided. [PyTorch Lightning][1] was used for this project. 
 
-1. The [execute_models_bash]() is used to execute a model and its configuration. Run commands in the terminal to execute. This file can be modified to execute over multiple configuration files. This approach is helpful for experimenting with various hyperparameters, training on multiple data folds,  and allowing you to work on other tasks. At the time of writing PyTorch Lightning had an issue with [releasing RAM](https://github.com/PyTorchLightning/pytorch-lightning/issues/2010) and this was a suitable workaround.
+1. The [execute_models_bash](https://github.com/mddunlap924/G2Net_Spectrogram-Classification/blob/main/execute_models_bash) is used to execute a model and its configuration. Run commands in the terminal to execute. This file can be modified to execute over multiple configuration files. This approach is helpful for experimenting with various hyperparameters, training on multiple data folds,  and allowing you to work on other tasks. At the time of writing PyTorch Lightning had an issue with [releasing RAM](https://github.com/PyTorchLightning/pytorch-lightning/issues/2010) and this was a suitable workaround.
 
    ```
    sh execute_models_bash
@@ -34,7 +34,7 @@ In this section a description of the modeling approach and steps required to exe
 
 4. [helper_functions.py](https://github.com/mddunlap924/G2Net_Spectrogram-Classification/blob/main/helper_functions.py) contains methods and classes for tasks such as logging data with [Weights & Biases][3], signal processing and filtering techniques with [GWpy][4] such as data [spectral whitening][5], loading configuration parameters, and measuring descriptive statistics on the datasets.
 
-The architecture can easily be changed by assigning different models in the [configuration file]().
+The architecture can easily be changed by assigning different models in the [configuration file](https://github.com/mddunlap924/G2Net_Spectrogram-Classification/blob/main/Model_Cfgs/exp_0.yaml).
 
 ```
   """ Get Timm Model Config Info """
